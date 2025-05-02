@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Compare Cereal Manufacturers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/compare_manufacturers.js" defer></script>
+</head>
+
+<body>
+    <h1>Compare Cereal Manufacturers</h1>
+
+    <div id="controls" style="text-align: center;">
+        <label for="nutrientSelect"><strong>Select Nutrient:</strong></label>
+        <select id="nutrientSelect"></select>
+    </div>
+
+    <div id="plots">
+        <div id="boxplot" class="plot-container"></div>
+        <div id="barchart" class="plot-container"></div>
+        <div id="heatmap" class="plot-container"></div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <button onclick="location.href='index.html'">Back to Home</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cereal Clusters Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/cereal_clusters.js" defer></script>
+</head>
+
+<body>
+  <h1>Cereal Cluster Visual Analytics</h1>
+
+  <!-- Central Controls Section -->
+  <div id="controls">
+
+    <div id="plot-toggles">
+      <label><input type="checkbox" class="plot-toggle" value="scatter" checked /> PCA Scatter</label>
+      <label><input type="checkbox" class="plot-toggle" value="parallel" checked /> Parallel Coordinates</label>
+      <label><input type="checkbox" class="plot-toggle" value="dendrogram" checked /> Dendrogram</label>
+    </div>
+
+    <div id="filter-controls">
+      <label>
+        Protein ≥ <span id="proteinVal">0</span>
+        <input type="range" id="proteinSlider" min="0" max="10" value="0" />
+      </label>
+      <label>
+        Sugar ≤ <span id="sugarVal">15</span>
+        <input type="range" id="sugarSlider" min="0" max="15" value="15" />
+      </label>
+
+      <button id="exportBtn">Export Filtered</button>
+    </div>
+  </div>
+
+  <div id="scatter" class="plot-container"></div>
+  <div id="parallel" class="plot-container"></div>
+  <div id="dendrogram" class="plot-container"></div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <button onclick="location.href='index.html'">Back to Home</button>
+  </div>
+</body>
+
+</html>

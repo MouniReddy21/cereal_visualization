@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Compare Cereal Shelves</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/compare_shelves.js" defer></script>
+</head>
+
+<body>
+
+    <h1>🛒 Cereal Shelf Comparison</h1>
+
+    <div id="controls" style="text-align: center;">
+        <label><input type="checkbox" class="shelf-toggle" value="1" checked> Shelf 1</label>
+        <label><input type="checkbox" class="shelf-toggle" value="2" checked> Shelf 2</label>
+        <label><input type="checkbox" class="shelf-toggle" value="3" checked> Shelf 3</label>
+    </div>
+
+    <div id="radar" class="plot-container"></div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <button onclick="location.href='index.html'">Back to Home</button>
+    </div>
+
+</body>
+
+</html>
